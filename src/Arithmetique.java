@@ -29,6 +29,21 @@ public final class Arithmetique {
     }
 
     // Methode Somme
+    public int somme(int x, int y){
+        return x+y;
+    }
+
+    // Methode Moyenne
+    public float moyenne(int x, int y){
+        return somme(x, y)/2;
+    }
+
+    // Methode Affiche
+    public void affiche(){
+        System.out.println("\n Je suis une instance mes valeurs sont: x= " +  this.x +" et y= " + this.y);
+    }
+
+
 
 
 
