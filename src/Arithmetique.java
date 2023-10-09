@@ -3,6 +3,7 @@ public final class Arithmetique {
 
     private int x;
     private int y;
+    private String name;
 
     // constructeur sans paramètre
     private Arithmetique(){
@@ -10,10 +11,16 @@ public final class Arithmetique {
         super();
     }
 
-    // Constructeur avec paramètres
+    // Constructeur avec 2 paramètres
     private Arithmetique(int x, int y){
         this.x = x;
         this.y = y;
+    }
+    // Constructeur avec 3 paramètres
+    private Arithmetique(int x, int y, String name){
+        this.x = x;
+        this.y =y;
+        this.name = name;
     }
 
     // Methode de récupération de l'instance sans paramètre
@@ -22,9 +29,15 @@ public final class Arithmetique {
         return instance;
     }
 
-    //Methode de récupération de l'instance avec paramètres
+    //Methode de récupération de l'instance avec 2 paramètres
     public static Arithmetique getInstance(int x, int y){
         if (instance==null) instance = new Arithmetique(x,y);
+        return instance;
+    }
+
+    //Methode de récupération de l'instance avec 3 paramètres
+    public static Arithmetique getInstance(int x, int y, String name){
+        if (instance==null) instance = new Arithmetique(x,y,name);
         return instance;
     }
 
