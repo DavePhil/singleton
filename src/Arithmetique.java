@@ -1,3 +1,5 @@
+import javax.swing.plaf.PanelUI;
+
 public final class Arithmetique {
     private static Arithmetique instance;
 
@@ -49,6 +51,16 @@ public final class Arithmetique {
     // Methode Moyenne
     public float moyenne(int x, int y){
         return somme(x, y)/2;
+    }
+
+    //Methode soustraction
+    public int soustraction(int x, int y){
+        return x-y;
+    }
+
+    // Methode multiplication
+    public int multiplication(int x, int y){
+        return x*y;
     }
 
     // Methode Affiche
